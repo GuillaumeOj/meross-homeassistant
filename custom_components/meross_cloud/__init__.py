@@ -176,7 +176,7 @@ class MerossCoordinator(DataUpdateCoordinator):
             http_client=self._client,
             mqtt_override_server=self._mqtt_override_address,
             auto_reconnect=True,
-            ssl_context=self._mqtt_ssl_context
+            mqtt_ssl_context=self._mqtt_ssl_context
         )
 
         # Since we already have fetched for the DeviceList, publish it right away
