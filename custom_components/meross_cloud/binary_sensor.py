@@ -16,7 +16,6 @@ from .common import (DOMAIN, MANAGER, HA_BINARY_SENSOR,
                      HA_SENSOR_POLL_INTERVAL_SECONDS, DEVICE_LIST_COORDINATOR)
 
 _LOGGER = logging.getLogger(__name__)
-PARALLEL_UPDATES = 2
 SCAN_INTERVAL = timedelta(seconds=HA_SENSOR_POLL_INTERVAL_SECONDS)
 
 
