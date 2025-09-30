@@ -7,9 +7,8 @@ from meross_iot.controller.subdevice import Ms405Sensor
 from meross_iot.manager import MerossManager
 from meross_iot.model.enums import OnlineStatus
 from meross_iot.model.http.device import HttpDeviceInfo
-from sqlalchemy import false
 
-from components.binary_sensor import BinarySensorEntity, BinarySensorDeviceClass
+from homeassistant.components.binary_sensor import BinarySensorEntity, BinarySensorDeviceClass
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 from . import MerossDevice
